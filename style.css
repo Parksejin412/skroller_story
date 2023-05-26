@@ -1,0 +1,305 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poor Story', cursive;
+}
+iframe{
+    position: fixed;
+    right: 0px;
+    top: -100px;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.5);
+}
+.text{
+    position: fixed;
+    left: 30px;
+    top: 10px;
+    z-index: 500;
+    color: #fff;
+}
+.fixed-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+}
+
+h2{
+    font-size: 50px;
+    color: #19364e;
+    font-weight: bold;
+}
+
+p{
+    font-size: 30px;
+    font-weight: bold;
+    color: #19364e;
+}
+
+.slide-content {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+/* 배경 */
+#slide01{
+    background: url(img/mountains-g8e602f4d8_1280.png) no-repeat bottom;
+    background-size: 100% 600px;
+    
+}
+
+#slide02{
+    background: url(img/landscape-g8cd74caa6_1280.png) no-repeat top;
+    background-size: cover;
+}
+
+#slide03{
+    background: url(img/beautiful-nature-gb954e2c4a_1920.jpg)no-repeat top;
+    background-size: 100% 1000px;
+}
+
+#slide04{
+    background:url(img/cloud.jpg) no-repeat ;
+    background-size: 100% 1200px;
+}
+
+#slide07{
+    background: url(img/flowers-g19c26278c_1280.jpg) no-repeat;
+    background-size: 100% 1200px;
+}
+
+#slide08{
+    background: url(img/hill-ge65c0fc38_1280.jpg) no-repeat;
+    background-size: 100% 1200px;
+}
+#slide09{
+    background: url(img/forest-g786f2e677_1280.jpg) no-repeat;
+    background-size: 100% 1210px;
+}
+#slide10{
+    background:url(img/alps-g8d009b43f_1280.jpg) no-repeat;
+    background-size: 100% 1210px;
+}
+
+/* //////////////////////////// */
+
+/* slide01 */
+#slide01 img{
+   width: 200px;
+}
+
+/* slide02 */
+#slide02 img{
+    width: 300px;
+}
+
+/* slide03 */
+#slide03 .slide-content{
+    position: relative;
+}
+#slide03 img{
+    width: 700px;
+    position: absolute;
+    left: -400px;
+    top: 200px;
+}
+
+/* slide04 */
+#slide04 .slide-content{
+    position: relative;
+}
+#slide04 img{
+    position: absolute;
+    top: 500px;
+    left: -400px;
+
+}
+
+/* slide05 */
+#slide05 .slide-content{
+    position: relative;
+}
+#slide05 img{
+    position: absolute;
+    width: 300px;
+    top: -1200px;
+    left: 100px;
+}
+
+/* slide06 */
+#slide06 .flight{
+    position: relative;
+}
+#slide06 img{
+    position: absolute;
+    top: -200px;
+    left: 300px;
+}
+
+/* slide07 */
+#slide07 .flower1{
+    position: relative;
+}
+#slide07 .flower2 {
+    position: relative;
+}
+#slide07 .bee{
+    position: relative;
+}
+#slide07 .bee2{
+    position: relative; 
+}
+#slide07 .flower1 img{
+    position: absolute;
+    width: 500px;
+    bottom: 0px;
+    left: 20%;
+    animation: flower1 5s linear infinite;
+}
+#slide07 .flower2 img{
+    position: absolute;
+    width: 300px;
+    top: 360px;
+    left: 70%;
+    animation: flower2 5s linear infinite;
+}
+/* 애니메이션 */
+@keyframes flower1{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes flower2{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(-360deg);}
+}
+
+#slide07 .bee img{
+    position: absolute;
+    top: -10px;
+    left: 1500px;
+}
+#slide07 .bee2 img{
+    position: absolute;
+    transform: rotateY(180deg);
+    width: 500px;
+    top: 0px;
+    left: 0px;
+}
+
+/* slide08 */
+#slide08 .couple{
+    position: relative; 
+}
+#slide08 .heart{
+    position: relative; 
+}
+#slide08 .couple img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#slide08 .heart img{
+    width: 300px;
+    position: absolute;
+    top: 200px;
+    left: 700px;
+}
+
+/* slide09 */
+#slide09 .girl{
+    position: relative; 
+}
+#slide09 .blue{
+    position: relative;
+}
+#slide09 .with{
+    position: relative;
+}
+#slide09 .ok{
+    position: relative;
+}
+#slide09 p{
+    color: #fff;
+}
+
+#slide09 .girl img{
+    width: 70%;
+    position: absolute;
+    top: 300px;
+    left: 600px;
+    transform: rotateY(180deg);
+}
+#slide09 .blue img{
+    width: 30%;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+#slide09 .with img{
+    width: 300px;
+    position: absolute;
+    top: 80px;
+    left: 600px;
+}
+#slide09 .ok img{
+    width: 300px;
+    position: absolute;
+    top: 230px;
+    left: 1300px;  
+}
+
+/* slide10 */
+#slide10 .bird1{
+    position: relative;
+}
+#slide10 .bird2{
+    position: relative;
+}
+#slide10 .love2{
+    position: relative;
+}
+#slide10 p{
+    color: #fff;
+}
+#slide10 .bird1 img{
+    position: absolute;
+    transform: rotateY(180deg);
+    top: 0;
+    left: 0;
+}
+#slide10 .bird2 img{
+    position: absolute;
+    transform: rotateY(180deg);
+    top: 20px;
+    left: 0;
+}
+
+#slide10 .love2 img{
+    position: absolute;
+    top: 0;
+    left: 1200px;
+    width: 700px;
+}
+
